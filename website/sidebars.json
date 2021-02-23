@@ -2,10 +2,18 @@
   "docs": {
     "Docusaurus": [
       "doc1",
-      "doc9"
+      "doc2",
+      "doc3",
+      "doc4",
+      "doc5",
+      "博客语法"
     ],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
+    "Vue仿小米商城": [
+      "vue_cli"
+    ],
+    "配置": [
+      "装机配置"
+    ]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]

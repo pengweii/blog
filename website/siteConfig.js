@@ -29,6 +29,7 @@ const siteConfig = {
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
+
   // Used for publishing and more
   projectName: 'mysite',
   organizationName: 'pengweii',
@@ -38,24 +39,33 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
+    {doc: 'doc1', label: '笔记'},
     {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    {blog: true, label: '博客'},
+    {page: 'help', label: '帮助'},
+    {search: true}
   ],
+
+  algolia: {
+    apiKey: 'my-api-key',
+    indexName: 'my-index-name',
+    placeholder: '搜索'
+    // appId: 'app-id', // Optional, if you run the DocSearch crawler on your own
+    // algoliaOptions: {} // Optional, if provided by Algolia
+  },
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
-  favicon: 'img/favicon.ico',
+  headerIcon: 'img/hammer.svg',
+  footerIcon: 'img/hammer.svg',
+  favicon: 'img/hammer.svg',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#007913',
-    secondaryColor: '#00540d',
+    primaryColor: '#00bfa6',//'#007913',
+    secondaryColor: '#009985'//'#00540d',
   },
 
   /* Custom fonts for website */
@@ -73,7 +83,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} Peng Wei`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -105,6 +115,12 @@ const siteConfig = {
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   // repoUrl: 'https://github.com/facebook/test-site',
+
+  // 侧边下拉展开
+  docsSideNavCollapsible: true,
+
+
+
 };
 
 module.exports = siteConfig;
