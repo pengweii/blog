@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>装机配置 · Test Site</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="![tupian](img/0001.png)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="装机配置 · Test Site"/><meta property="og:type" content="website"/><meta property="og:url" content="https://pengweii.github.io/mysite/"/><meta property="og:description" content="![tupian](img/0001.png)"/><meta property="og:image" content="https://pengweii.github.io/mysite/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://pengweii.github.io/mysite/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/mysite/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://pengweii.github.io/mysite/blog/atom.xml" title="Test Site Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://pengweii.github.io/mysite/blog/feed.xml" title="Test Site Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/mysite/js/scrollSpy.js"></script><link rel="stylesheet" href="/mysite/css/main.css"/><script src="/mysite/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/mysite/"><img class="logo" src="/mysite/img/favicon.ico" alt="Test Site"/><h2 class="headerTitleWithLogo">Test Site</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/mysite/docs/doc1" target="_self">笔记</a></li><li class=""><a href="/mysite/docs/doc4" target="_self">API</a></li><li class=""><a href="/mysite/blog/" target="_self">博客</a></li><li class=""><a href="/mysite/help" target="_self">帮助</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="搜索" title="搜索"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>配置</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Docusaurus</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mysite/docs/doc1">Example Page</a></li><li class="navListItem"><a class="navItem" href="/mysite/docs/doc3">This is document number 3</a></li><li class="navListItem"><a class="navItem" href="/mysite/docs/博客语法">博客语法</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Vue仿小米商城</h3><ul class=""><li class="navListItem"><a class="navItem" href="/mysite/docs/doc2">document number 2</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">配置</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/mysite/docs/装机配置">装机配置</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">装机配置</h1></header><article><div><span><p><img src="img/0001.png" alt="tupian">
+<img src="img/0001.png"></p>
+<h2><a class="anchor" aria-hidden="true" id="无法连接rawgithubusercontentcom"></a><a href="#无法连接rawgithubusercontentcom" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>无法连接raw.githubusercontent.com</h2>
+<pre><code class="hljs">curl: (7) Failed <span class="hljs-keyword">to</span> connect <span class="hljs-keyword">to</span> raw.githubusercontent.com<span class="hljs-built_in"> port </span>443:<span class="hljs-built_in"> Connection </span>refused
+</code></pre>
+<ol>
+<li>打开网站 <a href="https://www.ipaddress.com/">https://www.ipaddress.com/</a>
+查询一下 raw.githubusercontent.com对应的IP 地址</li>
+<li>找到 /etc 目录下 的 hosts 文件，复制出来 修改，在后面添加 如下：
+然后用修改的文件替换 /etc 目录下的 hosts 文件</li>
+</ol>
+<pre><code class="hljs">sudo vim <span class="hljs-regexp">/etc/</span>hosts
+</code></pre>
+<p><img src="https://img2020.cnblogs.com/blog/1758578/202102/1758578-20210222223724144-209147143.png" alt=""></p>
+<h2><a class="anchor" aria-hidden="true" id="安装homebrew"></a><a href="#安装homebrew" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>安装Homebrew</h2>
+<pre><code class="hljs">/<span class="hljs-keyword">bin/bash </span>-c <span class="hljs-string">"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</span>
+</code></pre>
+<p>Homebrew官网 <a href="https://brew.sh/">https://brew.sh/</a>
+使用这种方法大概率安装不成功或者极其地慢。推荐使用下面的方法：
+原文：<a href="https://www.jianshu.com/p/f048ca2acf7d">https://www.jianshu.com/p/f048ca2acf7d</a></p>
+<p>1 首先确保/usr/local/Homebrew文件夹不存在，存在的话删除，然后执行：</p>
+<pre><code class="hljs">sudo <span class="hljs-built_in">mkdir</span> /usr/<span class="hljs-built_in">local</span>/Homebrew
+</code></pre>
+<p>2 git克隆</p>
+<pre><code class="hljs">sudo git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://mirrors.ustc.edu.cn/brew.git /usr/local/Homebrew 
+//或者 
+sudo git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://mirrors.aliyun.com/homebrew/brew.git /usr/local/Homebrew 
+//或者 
+sudo git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git /usr/local/Homebrew
+</code></pre>
+<p>3 创建一个快捷方式到/usr/local/bin目录</p>
+<pre><code class="hljs">sudo ln -s <span class="hljs-meta-keyword">/usr/</span>local/Homebrew<span class="hljs-meta-keyword">/bin/</span>brew <span class="hljs-meta-keyword">/usr/</span>local<span class="hljs-meta-keyword">/bin/</span>brew
+</code></pre>
+<p>如果提示File exists表示/usr/local/bin文件夹里面已经有brew，删除后再运行第三步。</p>
+<p>4 创建core文件夹 并 再次git克隆</p>
+<pre><code class="hljs">sudo mkdir -p <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/Homebrew/</span>Library<span class="hljs-regexp">/Taps/</span>homebrew/homebrew-core
+</code></pre>
+<p>以及</p>
+<pre><code class="hljs">sudo git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://mirrors.ustc.edu.cn/homebrew-core.git /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core 
+//或者 
+sudo git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://mirrors.aliyun.com/homebrew/homebrew-core.git /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core 
+//或者
+sudo git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core
+</code></pre>
+<p>替换bottle源</p>
+<pre><code class="hljs"><span class="hljs-keyword">echo</span> 'export HOMEBREW_BOTTLE_DOMAIN=https:<span class="hljs-string">//mirrors.tuna.tsinghua.edu.cn/homebrew-bottles</span>' &gt;&gt; ~<span class="hljs-string">/.bash_profile</span>
+source ~<span class="hljs-string">/.bash_profile</span>
+</code></pre>
+<p>5 获取权限 并 运行更新</p>
+<pre><code class="hljs">sudo <span class="hljs-keyword">chown</span> -R $(whoami) /usr/<span class="hljs-keyword">local</span>/Homebrew
+</code></pre>
+<p>以及</p>
+<pre><code class="hljs"><span class="hljs-keyword">brew </span>update
+</code></pre>
+<p>稍等一会儿～大功告成！</p>
+<p>最后设置：设置环境变量，再运行下面两句后，重启终端：（命令中的链接地址可以替换为第二步或者第四步中对应的链接地址）</p>
+<pre><code class="hljs"><span class="hljs-keyword">echo</span> 'export HOMEBREW_BOTTLE_DOMAIN=https:<span class="hljs-string">//mirrors.ustc.edu.cn/homebrew-bottles</span>' &gt;&gt; ~<span class="hljs-string">/.zshrc</span>  <span class="hljs-keyword">echo</span> 'export HOMEBREW_BOTTLE_DOMAIN=https:<span class="hljs-string">//mirrors.ustc.edu.cn/homebrew-bottles</span>' &gt;&gt; ~<span class="hljs-string">/.bash_profile</span>
+</code></pre>
+<p>brew有一个自检程序，如果有问题自检试试：</p>
+<pre><code class="hljs"><span class="hljs-keyword">brew </span>doctor
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="安装和配置git"></a><a href="#安装和配置git" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>安装和配置git</h2>
+<pre><code class="hljs"><span class="hljs-keyword">brew </span><span class="hljs-keyword">install </span>git
+</code></pre>
+<p>配置git</p>
+<pre><code class="hljs">$ git<span class="hljs-built_in"> config </span>--global user.name <span class="hljs-string">"John Doe"</span>
+$ git<span class="hljs-built_in"> config </span>--global user.email johndoe@example.com
+</code></pre>
+<p>配置github
+<a href="https://www.runoob.com/git/git-remote-repo.html">https://www.runoob.com/git/git-remote-repo.html</a></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/mysite/docs/doc2"><span class="arrow-prev">← </span><span>document number 2</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#无法连接rawgithubusercontentcom">无法连接raw.githubusercontent.com</a></li><li><a href="#安装homebrew">安装Homebrew</a></li><li><a href="#安装和配置git">安装和配置git</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/mysite/" class="nav-home"><img src="/mysite/img/favicon.ico" alt="Test Site" width="66" height="58"/></a><div><h5>Docs</h5><a href="/mysite/docs/doc1.html">Getting Started (or other categories)</a><a href="/mysite/docs/doc2.html">Guides (or other categories)</a><a href="/mysite/docs/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/mysite/users">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/mysite/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/mysite/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2021 Your Name or Your Company Name</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: 'my-api-key',
+                indexName: 'my-index-name',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>
